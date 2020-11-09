@@ -8,11 +8,12 @@ public class Main {
         AbstractFactory ff = AbstractFactory.getInstance("Singletone.FiatFactory");
         AbstractFactory fordf = AbstractFactory.getInstance("Singletone.FordFactory");
         AbstractFactory fiatFake = AbstractFactory.getInstance("Singletone.FiatFactory");
+        AbstractFactory bestemmia = new FiatFactory();
         c.add(ff.creaAuto("Berlina"));
         System.out.println(c);
 
         System.out.println(ff);
-        System.out.println(fiatFake);
+        System.out.println(bestemmia);
 
 
     }
