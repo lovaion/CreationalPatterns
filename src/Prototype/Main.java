@@ -8,5 +8,6 @@ public class Main {
        OggettiHalloween zucca1 = gesDec.creaDecorazione1();
        System.out.println(zucca1.getDec().getTipo());
 
+
     }
 }
