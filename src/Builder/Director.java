@@ -18,4 +18,8 @@ public class Director {
         builderParola.creaVocale('e');
         builderParola.creaConsonante('x');
     }
+
+    public String getParola(){
+        return builderParola.getParola();
+    }
 }
