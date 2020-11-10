@@ -1,6 +1,6 @@
 package Builder;
 public abstract class BuilderParola {
-
+    protected String parola = "";
     /*
     Il prodotto è una stringa
     Noi abbiamo il builder che crea la consonante e la vocale, ma i diversi builder sono
@@ -11,5 +11,7 @@ public abstract class BuilderParola {
     public void creaConsonante(char c){}
     public void creaVocale(char c){};
 
-    public abstract String getParola();
+    public String getParola(){
+        return parola;
+    }
 }

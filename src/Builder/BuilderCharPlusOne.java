@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BuilderCharPlusOne extends BuilderParola{
-    private String parola = "";
     private List<Character> vocali = Arrays.asList('a', 'e', 'i', 'o', 'u');
 
     @Override
@@ -33,7 +32,4 @@ public class BuilderCharPlusOne extends BuilderParola{
         parola += vocali.get((indice + 1) %5);
     }
 
-    public String getParola(){
-        return parola;
-    }
 }

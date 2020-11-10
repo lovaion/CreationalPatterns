@@ -1,7 +1,6 @@
 package Builder;
 
 public class BuilderMaiuscolo extends BuilderParola {
-    private String parola = "";
 
     @Override
     public void creaConsonante(char c) {
@@ -13,7 +12,5 @@ public class BuilderMaiuscolo extends BuilderParola {
         parola += Character.toUpperCase(c);
     }
 
-    public String getParola() {
-        return parola;
-    }
+
 }
