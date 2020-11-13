@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FactoryMethod.controller.Controller">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <HBox spacing="465.0">
+                     <children>
+                        <Label fx:id="fiat" onMouseClicked="#fiatCliccato" text="Fiat">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ford" onMouseClicked="#fordCliccato" text="Ford">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox spacing="360.0">
+                     <children>
+                        <Label fx:id="berlina" onMouseClicked="#berlinaClicked" text="Berlina">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="sportiva" onMouseClicked="#sportivaClicked" text="Sportiva">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="70.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <Label text="Macchine" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="33.0" />
+               </font>
+            </Label>
+         </top>
+         <bottom>
+            <Button mnemonicParsing="false" onMouseClicked="#generaMacchina" text="Genera Macchina" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="40.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
