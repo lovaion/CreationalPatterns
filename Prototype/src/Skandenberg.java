@@ -1,29 +1,26 @@
-package Model;
-
 import javafx.scene.image.Image;
 
-public class EugenioGaudio extends Assessore {
+public class Skandenberg extends Assessore {
+
 
     private int height;
     private int width;
-    public Image immagine = new Image(String.valueOf(getClass().getResource("../resources/eugenioGaudio.png")));
+    private Image immagine = new Image(String.valueOf(getClass().getResource("/resources/skandenberg.png")));
 
 
-
-    public EugenioGaudio(EugenioGaudio a) {
+    public Skandenberg(Skandenberg a) {
         super(a);
         this.height = a.height;
         this.width = a.width;
     }
 
-    public EugenioGaudio() {
+    public Skandenberg() {
         super();
     }
 
-
     @Override
     public Assessore clone() {
-        return new EugenioGaudio(this);
+        return new Skandenberg(this);
     }
 
     @Override

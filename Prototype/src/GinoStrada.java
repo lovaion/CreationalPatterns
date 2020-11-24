@@ -1,32 +1,29 @@
-package Model;
-
 import javafx.scene.image.Image;
 
-public class Skandenberg extends Assessore {
-
+public class GinoStrada extends Assessore {
 
     private int height;
     private int width;
-    private Image immagine = new Image(String.valueOf(getClass().getResource("../resources/skandenberg.png")));
+    private Image immagine = new Image(String.valueOf(getClass().getResource("/resources/ginoStrada.png")));
 
 
-    public Skandenberg(Skandenberg a) {
+    public GinoStrada(GinoStrada a) {
         super(a);
         this.height = a.height;
         this.width = a.width;
     }
 
-    public Skandenberg() {
+    public GinoStrada() {
         super();
     }
 
     @Override
     public Assessore clone() {
-        return new Skandenberg(this);
+        return new GinoStrada(this);
     }
-
     @Override
     public Image getImage() {
         return immagine;
     }
+
 }

@@ -1,31 +1,31 @@
-package Model;
-
 import javafx.scene.image.Image;
 
-public class GinoStrada extends Assessore {
+public class EugenioGaudio extends Assessore {
 
     private int height;
     private int width;
-    private Image immagine = new Image(String.valueOf(getClass().getResource("../resources/ginoStrada.png")));
+    public Image immagine = new Image(String.valueOf(getClass().getResource("/resources/eugenioGaudio.png")));
 
 
-    public GinoStrada(GinoStrada a) {
+
+    public EugenioGaudio(EugenioGaudio a) {
         super(a);
         this.height = a.height;
         this.width = a.width;
     }
 
-    public GinoStrada() {
+    public EugenioGaudio() {
         super();
     }
 
+
     @Override
     public Assessore clone() {
-        return new GinoStrada(this);
+        return new EugenioGaudio(this);
     }
+
     @Override
     public Image getImage() {
         return immagine;
     }
-
 }

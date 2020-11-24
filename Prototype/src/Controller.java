@@ -1,8 +1,3 @@
-package Controller;
-
-import Model.EugenioGaudio;
-import Model.GinoStrada;
-import Model.Skandenberg;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
@@ -33,21 +28,16 @@ public class Controller {
 
     public void initialize() {
         loadMusic();
-        canvasDisegno.getGraphicsContext2D().drawImage(new Image(String.valueOf(getClass().getResource("../resources/ospedale.png"))), 0, 0);
+        canvasDisegno.getGraphicsContext2D().drawImage(new Image(String.valueOf(getClass().getResource("/resources/ospedale.png"))), 0, 0);
         EugenioGaudio eug = new EugenioGaudio();
         GinoStrada gin = new GinoStrada();
         Skandenberg sk = new Skandenberg();
         ImageView skandenberg = new ImageView(sk.getImage());
         ImageView eugenio = new ImageView(eug.getImage());
         ImageView gino = new ImageView(gin.getImage());
-
-
-
-
         skandenberg.setOnMouseClicked(cliccato->{
             Skandenberg clonato = (Skandenberg) sk.clone();
-            dipingere = clonato.getImage();
-        });
+            dipingere = clonato.getImage();        });
         eugenio.setOnMouseClicked(cliccato->{
             EugenioGaudio clonato = (EugenioGaudio) eug.clone();
             dipingere = clonato.getImage();
@@ -78,8 +68,5 @@ public class Controller {
         player.setVolume(0.2);
         player.play();
     }
-
-
-
 
 }

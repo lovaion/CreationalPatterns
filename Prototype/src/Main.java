@@ -1,5 +1,3 @@
-package Model;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,7 +13,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader root = new FXMLLoader(getClass().getResource("../View/view.fxml"));
+        FXMLLoader root = new FXMLLoader(getClass().getResource("/View/view.fxml"));
         primaryStage.setScene(new Scene(root.load()));
         primaryStage.setTitle("Choose your assessor");
         primaryStage.setWidth(800);
